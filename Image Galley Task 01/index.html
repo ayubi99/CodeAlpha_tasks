@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Gallery</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Images Gallery</h1>
+    <!-- category buttons -->
+    <div class="category-buttons">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('houses')">Houses</button>
+      <button onclick="filterImages('cars')">Cars</button>
+    </div>
+    <!-- Gallery  section-->
+    <div class="gallery">
+      <!-- Nature images -->
+      <img src="./images/n1.jpg" data-category="nature" alt="nature 1" />
+      <img src="./images/n2.jpg" data-category="nature" alt="nature 2" />
+      <img src="./images/n3.jpg" data-category="nature" alt="nature 3" />
+      <img src="./images/n4.jpg" data-category="nature" alt="nature 4" />
+      <img src="./images/n5.jpg" data-category="nature" alt="nature 5" />
+      <img src="./images/n6.jpg" data-category="nature" alt="nature 6" />
+      <img src="./images/n7.jpg" data-category="nature" alt="nature 7" />
+      <img src="./images/n8.jpg" data-category="nature" alt="nature 8" />
+      <img src="./images/n9.jpg" data-category="nature" alt="nature 9" />
+      <img src="./images/n10.jpg" data-category="nature" alt="nature 10" />
+      <img src="./images/n11.jpg" data-category="nature" alt="nature 11" />
+      <img src="./images/n12.jpg" data-category="nature" alt="nature 11" />
+      <img src="./images/n13.jpg" data-category="nature" alt="nature 11" />
+      <img src="./images/n14.jpg" data-category="nature" alt="nature 11" />
+      <img src="./images/n15.jpg" data-category="nature" alt="nature 11" />
+      <img src="./images/n16.jpg" data-category="nature" alt="nature 11" />
+      <!-- house images -->
+      <img src="./images/home1.jpg" data-category="houses" alt="houses 1" />
+      <img src="./images/home2.jpg" data-category="houses" alt="houses 2" />
+      <img src="./images/home3.jpg" data-category="houses" alt="houses 3" />
+      <img src="./images/home4.jpg" data-category="houses" alt="houses 4" />
+      <img src="./images/home5.jpg" data-category="houses" alt="houses 5" />
+      <img src="./images/home6.jpg" data-category="houses" alt="houses 6" />
+
+      <img src="./images/home7.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home8.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home9.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home10.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home11.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home12.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home13.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home14.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home15.jpg" data-category="houses" alt="houses 6" />
+      <img src="./images/home16.jpg" data-category="houses" alt="houses 6" />
+
+      <!-- car images -->
+      <img src="./images/car1.jpg" data-category="cars" alt="car 1" />
+      <img src="./images/car2.jpg" data-category="cars" alt="car 2" />
+      <img src="./images/car3.jpg" data-category="cars" alt="car 3" />
+      <img src="./images/car4.jpg" data-category="cars" alt="car 4" />
+      <img src="./images/car5.jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car6.jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car7.jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car8.jpg" data-category="cars" alt="car 5" />
+
+      <img src="./images/car9 (1).jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car10 (1).jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car11 (1).jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car12 (1).jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car13 (1).jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car14 (1).jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car15 (1).jpg" data-category="cars" alt="car 5" />
+      <img src="./images/car16 (1).jpg" data-category="cars" alt="car 5" />
+    </div>
+    <!-- lightbox section -->
+    <div class="lightbox" id="lightbox">
+      <span class="close" onclick="closeLightbox()">&times;</span>
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <img id="lightbox-img" src="" alt="" />
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
